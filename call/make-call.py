@@ -48,6 +48,7 @@ def main(phone_number):
     serial_connection.close()
 
 if __name__ == "__main__":
+  # todo: input validation
   parser = argparse.ArgumentParser(description="Make a phone call using a serial modem.")
   parser.add_argument("phone_number", help="The phone number to call")
   args = parser.parse_args()
